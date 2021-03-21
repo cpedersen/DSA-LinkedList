@@ -102,7 +102,7 @@ class LinkedList {
     for (let i = 0; i < position - 1; i++) {
       if (currNode.next === null) {
         this.insertLast(newItem);
-        return `Item added to end of list`;
+        return "Item added to end of list";
       }
       prevNode = currNode;
       currNode = currNode.next;
@@ -142,7 +142,7 @@ function isEmpty(list) {
 
 function findPrevious(item, list) {
   if (!list.head || list.head === null) {
-    return "Not a list";
+    return "List not found";
   }
   let currNode = list.head;
   let prevNode = list.head;
@@ -172,7 +172,7 @@ function findLast(list) {
 
 function thirdFromEnd(list) {
   if (!list.head || list.head === null) {
-    return "Not a list.";
+    return "List not found";
   }
   let currNode = list.head;
   while (currNode.next !== null) {
@@ -188,7 +188,7 @@ function thirdFromEnd(list) {
 
 function middle(list) {
   if (!list || list.head === null) {
-    return `No List.`;
+    return "List not found";
   }
   let currNode = list.head;
   let endNode = currNode.next.next;
