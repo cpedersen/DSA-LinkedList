@@ -11,5 +11,5 @@ Course work for 'Working with Linked Lists'.
 - 5.  Reverse a list
 - 6.  3rd from the end
 - 7.  Middle of a list
-- 8.  Cycle in a list - did not figure out
-- 9.  Sorting a list - did not figure out
+- 8.  Cycle in a list - not done 
+- 9.  Sorting a list - not done 
