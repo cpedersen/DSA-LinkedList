@@ -74,7 +74,7 @@ class LinkedList {
       currNode = currNode.next;
     }
     if (currNode === null) {
-      return `${beforeItem} not in list.`;
+      return `${beforeItem} not in list`;
     }
     const newNode = new _Node(newItem, currNode);
     prevNode.next = newNode;
@@ -87,7 +87,7 @@ class LinkedList {
     }
     let currNode = this.find(afterItem);
     if (currNode === null) {
-      return `${afterItem} not in list.`;
+      return `${afterItem} not in list`;
     }
     const newNode = new _Node(newItem, currNode.next);
     currNode.next = newNode;
@@ -102,7 +102,7 @@ class LinkedList {
     for (let i = 0; i < position - 1; i++) {
       if (currNode.next === null) {
         this.insertLast(newItem);
-        return `That position position doens't exist. Item added to end of list.`;
+        return `Item added to end of list`;
       }
       prevNode = currNode;
       currNode = currNode.next;
@@ -142,7 +142,7 @@ function isEmpty(list) {
 
 function findPrevious(item, list) {
   if (!list.head || list.head === null) {
-    return "Not a list.";
+    return "Not a list";
   }
   let currNode = list.head;
   let prevNode = list.head;
@@ -154,7 +154,7 @@ function findPrevious(item, list) {
     return `${item} is the first node`;
   }
   if (currNode === null) {
-    return `${item} is not in list.`;
+    return `${item} not in list`;
   }
   return prevNode.value;
 }
